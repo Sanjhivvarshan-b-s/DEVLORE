@@ -15,21 +15,7 @@
   margin: 0 0 20px 0;
 }
 
-  .page-container {
-    padding: 48px 20px;
-    text-align: center;
-  }
-
-  .page-container h1 {
-    font-size: 2rem;
-    margin-bottom: 8px;
-  }
-
-  .page-container p {
-    color: #666;
-  }
-
-  /* Additional styles can be added here */
+.quiz-setup form {
   margin: 20px 0;
   display: flex;
   flex-direction: column;
