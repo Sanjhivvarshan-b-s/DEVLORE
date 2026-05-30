@@ -1,15 +1,138 @@
-.page-container {
-  padding: 48px 20px;
+.results-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.results-no-data {
   text-align: center;
+  margin-top: 50px;
 }
 
-.page-container h1 {
-  font-size: 2rem;
-  margin-bottom: 8px;
-}
-
-.page-container p {
+.results-no-data h2 {
   color: #666;
 }
 
+.results-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
+.results-header h2 {
+  margin: 0 0 10px 0;
+  color: #282c34;
+  font-size: 2rem;
+}
+
+.results-score-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  color: white;
+  font-size: 14px;
+}
+
+.results-score-circle.excellent {
+  background: linear-gradient(135deg, #28a745, #20c997);
+}
+
+.results-score-circle.good {
+  background: linear-gradient(135deg, #007bff, #0069d9);
+}
+
+.results-score-circle.average {
+  background: linear-gradient(135deg, #ffc107, #ff9800);
+}
+
+.results-score-circle.poor {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+}
+
+.results-score-value {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.results-score-label {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.results-details {
+  display: flex;
+  gap: 15px;
+  margin: 30px 0;
+  justify-content: center;
+}
+
+.results-detail-item {
+  text-align: center;
+  padding: 15px 20px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 4px solid #007bff;
+}
+
+.results-detail-item h4 {
+  margin: 0 0 8px 0;
+  color: #666;
+  font-size: 12px;
+}
+
+.results-detail-item p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #282c34;
+}
+
+.results-section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 30px 0 20px 0;
+  color: #282c34;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+.results-wrong-item {
+  background: #fff3cd;
+  padding: 15px;
+  border-left: 4px solid #ff9800;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.results-wrong-item h5 {
+  margin: 0 0 10px 0;
+  color: #d32f2f;
+  font-size: 14px;
+}
+
+.results-wrong-item p {
+  margin: 5px 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.results-wrong-item .label {
+  color: #666;
+  font-weight: 600;
+}
+
+.results-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.results-actions button {
+  flex: 1;
+  max-width: 200px;
+}
