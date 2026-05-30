@@ -4,8 +4,9 @@ import './Navbar.css';
 function Navbar() {
   return (
     <nav className="navbar">
-      <h2>DevLore</h2>
-      <ul className="navbar-ul">
+      <div className="navbar-inner">
+        <h2 className="brand">DevLore</h2>
+        <ul className="navbar-ul">
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -15,7 +16,8 @@ function Navbar() {
         <li>
           <Link to="/setup">Start Quiz</Link>
         </li>
-      </ul>
+        </ul>
+      </div>
     </nav>
   );
 }

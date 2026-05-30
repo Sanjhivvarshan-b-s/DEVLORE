@@ -1,22 +1,45 @@
 .navbar {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  background: linear-gradient(90deg, #0f1724 0%, #1f2a44 50%, #4b1c9d 100%);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(12, 12, 15, 0.25);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.navbar-inner {
+  max-width: 1126px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  background-color: #282c34;
-  color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.25rem;
+  box-sizing: border-box;
 }
 
-.navbar h2 {
+.navbar h2.brand {
   margin: 0;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: linear-gradient(90deg, #ffd47a 0%, #ff7eb6 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.12);
 }
 
 .navbar-ul {
   display: flex;
-  gap: 20px;
+  gap: 16px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -24,12 +47,30 @@
 }
 
 .navbar a {
-  color: white;
+  color: #e6e6ff;
   text-decoration: none;
   font-weight: 500;
-  transition: opacity 0.2s ease;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background 0.18s ease, transform 0.12s ease, color 0.18s ease;
 }
 
 .navbar a:hover {
-  opacity: 0.8;
+  background: rgba(255,255,255,0.04);
+  transform: translateY(-2px);
+}
+
+.navbar a.active {
+  background: rgba(255,255,255,0.08);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .navbar-inner {
+    padding: 0.75rem 0.9rem;
+    gap: .5rem;
+  }
+  .navbar h2.brand {
+    font-size: 1.25rem;
+  }
 }
