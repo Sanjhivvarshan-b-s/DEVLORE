@@ -52,3 +52,28 @@
 .setup-loading {
   opacity: 0.6;
 }
+
+@media (max-width: 768px) {
+  .quiz-setup {
+    margin: 20px auto 0;
+    padding: 16px 12px 20px;
+  }
+  .quiz-setup form {
+    gap: 16px;
+  }
+  .setup-field {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .setup-field label {
+    min-width: 0;
+    text-align: left;
+  }
+  .setup-field select {
+    width: 100%;
+  }
+  .quiz-setup .btn {
+    width: 100%;
+  }
+}

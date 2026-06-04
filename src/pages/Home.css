@@ -43,3 +43,43 @@
   margin-top: 30px;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .home-welcome {
+    margin-top: 24px;
+    padding: 24px 14px;
+  }
+  .home-dashboard {
+    padding: 12px;
+  }
+  .stats-grid {
+    flex-direction: column;
+  }
+  .home-dashboard > div[style] {
+    padding: 16px !important;
+  }
+  .home-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .home-actions button {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-welcome h1 {
+    font-size: 2rem;
+  }
+  .home-welcome p {
+    font-size: 1rem;
+  }
+  .home-dashboard h2 {
+    margin-bottom: 20px;
+  }
+  .stats-grid {
+    gap: 12px;
+  }
+}

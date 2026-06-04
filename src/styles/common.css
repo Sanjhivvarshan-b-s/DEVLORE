@@ -185,3 +185,25 @@
   border-color: #007bff;
   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
 }
+
+@media (max-width: 768px) {
+  .grid-2,
+  .form-group {
+    flex-direction: column;
+  }
+  .form-group {
+    align-items: stretch;
+    gap: 10px;
+  }
+  .form-group label {
+    min-width: 0;
+    text-align: left;
+  }
+  .form-group select,
+  .form-group input {
+    width: 100%;
+  }
+  .card {
+    padding: 16px;
+  }
+}

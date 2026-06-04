@@ -136,3 +136,35 @@
   flex: 1;
   max-width: 200px;
 }
+
+@media (max-width: 768px) {
+  .results-container {
+    margin: 20px auto 0;
+    padding: 16px 12px 24px;
+  }
+  .results-details {
+    flex-direction: column;
+  }
+  .results-detail-item {
+    border-left-width: 4px;
+  }
+  .results-actions {
+    flex-direction: column;
+  }
+  .results-actions button {
+    max-width: none;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .results-score-circle {
+    width: 132px;
+    height: 132px;
+  }
+  .results-score-value {
+    font-size: 40px;
+  }
+  .results-header h2 {
+    font-size: 1.6rem;
+  }
+}

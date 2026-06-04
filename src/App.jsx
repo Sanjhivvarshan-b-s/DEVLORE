@@ -12,8 +12,8 @@ function App() {
     <Router>
       <div className="app-container">
         <Navbar />
-        
-        <main style={{ padding: '20px' }}>
+
+        <main className="app-main">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/setup" element={<QuizSetup />} />
