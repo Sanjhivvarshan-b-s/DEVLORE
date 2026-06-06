@@ -18,16 +18,42 @@ function Home() {
   };
 
   
-  if (!userData || userData.sessions.length === 0) {
+if (!userData || userData.sessions.length === 0) {
     return (
-      <div className="home-welcome">
-        <h1>Welcome to DevLore</h1>
-        <p>Test your technical knowledge and track your progress over time.</p>
-        <Link to="/setup">
-          <button className="btn btn-primary">
-            Start Your First Quiz
-          </button>
-        </Link>
+      <div className="home-welcome-container">        
+        <div className="welcome-header">
+          <h1>Welcome to <span className="highlight">DevLore</span></h1>         
+          <p className="main-subtitle">
+            Test your knowledge and track your progress over time.
+          </p>
+
+          <Link to="/setup">
+            <button className="btn btn-primary start-btn">
+              Start Your First Quiz
+            </button>
+          </Link>
+        </div>
+
+        <div className="features-section">
+          <div className="feature-card">
+            <div className="feature-icon">🎲</div>
+            <h3>Take Quizzes</h3>
+            <p>Jump into multiple-choice quizzes and test your general knowledge.</p>
+          </div>
+          
+          <div className="feature-card">
+            <div className="feature-icon">📊</div>
+            <h3>See Your Stats</h3>
+            <p>Keep track of your past scores and see how you improve over time.</p>
+          </div>
+          
+          <div className="feature-card">
+            <div className="feature-icon">💡</div>
+            <h3>Learn New Facts</h3>
+            <p>Discover interesting things while you play and try to beat your high score.</p>
+          </div>
+        </div>
+
       </div>
     );
   }
