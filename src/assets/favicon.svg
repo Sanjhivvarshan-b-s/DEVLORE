@@ -1,25 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
   <defs>
-    <linearGradient id="themePeach" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#efc577" />
-      <stop offset="100%" stop-color="#e29e7f" />
+    <linearGradient id="leftGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5c275" />
+      <stop offset="100%" stop-color="#e88876" />
     </linearGradient>
-    <linearGradient id="themePink" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#e3749e" />
-      <stop offset="100%" stop-color="#da6490" />
+
+    <linearGradient id="rightGrad" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ef7ca6" />
+      <stop offset="100%" stop-color="#d6578b" />
     </linearGradient>
-    <linearGradient id="themeBlend" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#e29e7f" />
-      <stop offset="100%" stop-color="#e3749e" />
+
+    <linearGradient id="bottomGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e88876" />
+      <stop offset="100%" stop-color="#d6578b" />
     </linearGradient>
   </defs>
 
-  <rect width="120" height="120" rx="28" fill="#0f172a" />
+  <polygon points="100,100 100,20 30.7,60 30.7,140" fill="url(#leftGrad)" />
 
-  <g transform="translate(10, 10)">
-    <path d="M 50 15 L 90 38 L 90 85 L 50 62 Z" fill="url(#themePink)" opacity="0.9" />
-    <path d="M 50 15 L 10 38 L 10 85 L 50 62 Z" fill="url(#themePeach)" />
-    <path d="M 10 85 L 50 108 L 90 85 L 50 62 Z" fill="url(#themeBlend)" />
-    <polygon points="50,42 62,54 50,66 38,54" fill="#ffffff" />
-  </g>
+  <polygon points="100,100 100,20 169.3,60 169.3,140" fill="url(#rightGrad)" />
+
+  <polygon points="100,100 30.7,140 100,180 169.3,140" fill="url(#bottomGrad)" />
+
+  <circle cx="100" cy="100" r="16" fill="#ffffff" />
 </svg>

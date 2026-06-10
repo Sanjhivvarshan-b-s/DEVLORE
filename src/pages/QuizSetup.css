@@ -1,25 +1,27 @@
 .quiz-setup {
-  max-width: 600px;
+  max-width: 650px; 
   margin: 50px auto;
   text-align: center;
   padding: 20px;
 }
 
 .quiz-setup h2 {
-  margin: 0 0 10px 0;
+  margin: 0 0 12px 0;
   color: #282c34;
+  font-size: 2rem; 
 }
 
 .quiz-setup p {
   color: #666;
-  margin: 0 0 20px 0;
+  margin: 0 0 30px 0;
+  font-size: 1.1rem; 
 }
 
 .quiz-setup form {
   margin: 20px 0;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px; 
 }
 
 .setup-field {
@@ -31,16 +33,17 @@
 
 .setup-field label {
   font-weight: bold;
-  min-width: 100px;
+  min-width: 110px; 
   text-align: right;
+  font-size: 1.1rem; 
 }
 
 .setup-field select {
-  padding: 8px;
-  width: 250px;
-  border-radius: 4px;
+  padding: 10px 12px; 
+  width: 280px; 
+  border-radius: 6px;
   border: 1px solid #ddd;
-  font-size: 14px;
+  font-size: 1rem; 
 }
 
 .setup-field select:focus {
@@ -51,6 +54,12 @@
 
 .setup-loading {
   opacity: 0.6;
+}
+
+.quiz-setup form button[type="submit"] {
+  font-size: 1.1rem;
+  padding: 14px 24px;
+  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
