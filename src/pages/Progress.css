@@ -11,12 +11,50 @@
 }
 
 .progress-no-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  margin-top: 50px;
+  min-height: 50vh;
+  margin-top: 10vh; 
+  padding: 20px;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .progress-no-data h2 {
-  color: #666;
+  color: #282c34;
+  font-size: 2.2rem;
+  margin-bottom: 25px; 
+  font-weight: normal; 
+}
+
+.progress-no-data p {
+  color: #555;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.85); 
+  padding: 25px 35px;
+  border-radius: 16px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); 
+  border: 1px solid rgba(200, 190, 255, 0.4); 
+}
+
+.progress-no-data button.btn-primary {
+  font-size: 1.2rem;
+  padding: 16px 48px;
+  border-radius: 50px;
+  font-weight: bold;
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.25);
+  transition: all 0.3s ease;
+}
+
+.progress-no-data button.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
 }
 
 .insights-grid {

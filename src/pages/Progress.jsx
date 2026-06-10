@@ -25,7 +25,10 @@ function Progress() {
     return (
       <div className="progress-no-data">
         <h2>No progress data yet!</h2>
-        <p>Take a few quizzes to see your analytics.</p>
+        <p>
+          Your learning journey begins here.<br /> 
+          Take a few quizzes to unlock personalized analytics and track your improvement over time.
+        </p>
         <Link to="/setup">
           <button className="btn btn-primary" style={{ marginTop: '20px' }}>Start a Quiz</button>
         </Link>
