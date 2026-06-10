@@ -135,18 +135,11 @@ This project includes practical implementation of:
 
 # 🌍 Deployment
 
-Deployment setup and live hosting will be added soon.
-
-### Status:
-🚧 Coming Soon
-
----
+This project is deployed using [Vercel](https://vercel.com). Any pushes to the `main` branch will automatically trigger a new build and deployment.
 
 # 🔗 Live Demo
 
-🚧 Coming Soon
-
----
+🚀 **[Play DevLore Quiz Here](https://devlore-quiz.vercel.app/)**
 
 # 👨‍💻 Developed By
 
